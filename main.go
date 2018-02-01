@@ -33,7 +33,7 @@ func main() {
 	}
 	fmt.Printf("Connecting to %v:%v\n", hostname, port)
 	// connect and bind
-	tx, err := smpp.NewTransmitter(
+	tx, err := smpp.NewTransceiver(
 		hostname,
 		port,
 		5,
